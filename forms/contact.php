@@ -9,11 +9,11 @@
   // Replace contact@example.com with your real receiving email address
   $receiving_email_address = '201814006@uns.edu.pe';
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
-  }
+  if( file_exists('../assets/vendor/php-email-form/php-email-form.php')) {
+    include('../assets/vendor/php-email-form/php-email-form.php');
+} else {
+    die( 'Coming Soon!');
+}
 
   $contact = new PHP_Email_Form;
   $contact->ajax = true;
